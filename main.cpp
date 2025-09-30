@@ -18,8 +18,7 @@ int main(void)
         {
             counter++;
             _delay_ms(200);
-            while (!(PIND & (1 << PD6)))
-                ;
+            while (!(PIND & (1 << PD6)));
         }
 
         switch (counter)
@@ -36,3 +35,4 @@ int main(void)
         }
     }
 }
+
